@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <style>
+            .calculator-container{
+            height:650px;
+            width:400px;
+            background-color: #cccccc;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            border-radius:5px 5px 30px 30px ;
+            border: #204791;
+        }
+        .calculator-screen{
+            height:50px;
+            width:350px;
+            margin-left: 20px;
+            background-color: #86b300;
+            color:white ;
+            font-size:20px ;
+        }
+        .brand-name{
+            color:black;
+            font-size: 20px;
+            margin-left: 15px;
+            padding-top: 15px;
+        
+        }
+        .button-container{
+            display:flex;
+            flex-direction: row;
+            justify-content:space-evenly ;
+            margin-top: 15px;
+        }
+        .calculator-button{
+            background-color:#001b4d;
+            color:white;
+            font-size: 25px;
+            height:40px;
+            width:65px;
+            font-weight:bold;
+            border: 1px double #001b4d;
+            border-radius: 4px 4px 15px 15px;
+            cursor: pointer;
+
+        }
+        .calculator-button:hover{
+            box-shadow:0 2px blue ;
+            transition: 0.5s;
+        }
+        .calculator-mainbutton{
+            color:white;
+            font-size: 20px;
+            height:40px;
+            width:65px;
+            font-weight:bold;
+            border: 1px double #660000;
+            border-radius: 4px 4px 15px 15px;
+            cursor: pointer;
+            background-color: #660000;
+
+        }
+        .calculator-mainbutton:hover{
+            box-shadow:0 2px #ff4d4d ;
+            transition: 0.5s;
+        }
+        .calculator-buttonn{
+            
+            background-color:#001b4d;
+            color:white;
+            font-size: 20px;
+            height:40px;
+            width:65px;
+            font-weight:bold;
+            border: 1px double #001b4d;
+            border-radius: 4px 4px 15px 15px;
+            cursor: pointer;
+        }
+        .calculator-buttonsmall {
+            background-color:#2952a3;
+            color:white;
+            font-size: 15px;
+            height:30px;
+            width:55px;
+            font-weight:bold;
+            border: 1px double #001b4d;
+            border-radius: 15px 15px 15px 15px;
+            cursor: pointer;
+        }
+        .calculator-buttonsmall:hover{
+            box-shadow:0 2px blue ;
+            transition: 0.5s;
+        }
+        .calculator-buttonok{
+            background-color:#2952a3;
+            color:white;
+            font-size: 15px;
+            height:50px;
+            width:70px;
+            font-weight:bold;
+            border: 1px double #001b4d;
+            border-radius: 25px ;
+            cursor: pointer;
+        }
+        .calculator-buttonok:hover{
+            box-shadow:0 2px blue ;
+            transition: 0.5s;}
+        .calculator-smallbutton{
+            background-color:#4775d1;
+            color:white;
+            font-size: 14px;
+            height:30px;
+            width:55px;
+            font-weight:bold;
+            border: 1px double #4775d1;
+            border-radius: 4px 4px 15px 15px ;
+            cursor: pointer;
+        }
+        .calculator-smallbutton:hover{
+            box-shadow:0 2px blue ;
+            transition: 0.5s;}
+
+            .calculator-topcontainer{
+
+                
+               
+                display:flex;
+                flex-direction: row-reverse;
+                justify-content: end;
+                align-items: flex-end;
+                padding-top:6px; 
+                margin-left: 300px;
+                margin-bottom: 7px;
+
+            }
+            .top-box{
+                background-color:#1a0000;
+                height:30px;
+                width:70px;
+                display:flex;
+                border: 2px silver solid;
+
+
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="calculator-container">
+            <p class="brand-name">CASIO
+            <div class="calculator-topcontainer">
+                <div class="top-box" width="30px">1</div>
+                <div class="top-box">2</div>
+                <div class="top-box">3</div>
+                <div class="top-box">4</div>
+            </div>
+        </p>
+            <input type="text" class="calculator-screen"/>
+            <div class="button-container">
+                <button class="calculator-buttonsmall ">shift</button>
+                <button class="calculator-buttonsmall">alpha</button>
+                <button class="calculator-buttonok">OK</button>
+                <button class="calculator-buttonsmall ">mode </button>
+                <button class="calculator-buttonsmall ">ON</button>
+            </div>
+            <div class="button-container">
+                <button class="calculator-smallbutton">x<sup>-1</sup></button>
+                <button class="calculator-smallbutton">x<sup>2</sup></button>
+                <button class="calculator-smallbutton">x<sup>3</sup></button>
+                <button class="calculator-smallbutton ">√</button>
+                <button class="calculator-smallbutton "> ∛ </button>
+            </div>
+            
+            
+            <div class="button-container">
+                <button class="calculator-smallbutton">hyp</button>
+                <button class="calculator-smallbutton">sin</button>
+                <button class="calculator-smallbutton">cos</button>
+                <button class="calculator-smallbutton ">tan</button>
+                <button class="calculator-smallbutton ">log<sub>10</sub></button>
+            </div>
+            <div class="button-container">
+                <button class="calculator-smallbutton">RCL</button>
+                <button class="calculator-smallbutton">ENG</button>
+                <button class="calculator-smallbutton">(</button>
+                <button class="calculator-smallbutton ">)</button>
+                <button class="calculator-smallbutton ">log</button>
+            </div>
+            
+        
+        <div class="button-container">
+            <button class="calculator-button">7</button>
+            <button class="calculator-button">8</button>
+            <button class="calculator-button">9</button>
+            <button class="calculator-mainbutton ">DEL</button>
+            <button class="calculator-mainbutton ">AC</button>
+        </div>
+        <div class="button-container">
+            <button class="calculator-button">4</button>
+            <button class="calculator-button">5</button>
+            <button class="calculator-button">6</button>
+            <button class="calculator-button ">*</button>
+            <button class="calculator-button ">/</button>
+        </div>
+        <div class="button-container">
+            <button class="calculator-button">1</button>
+            <button class="calculator-button">2</button>
+            <button class="calculator-button">3</button>
+            <button class="calculator-button ">+</button>
+            <button class="calculator-button ">-</button>
+        </div>
+        <div class="button-container">
+            <button class="calculator-button">0</button>
+            <button class="calculator-button">.</button>
+            <button class="calculator-buttonn">*10<sup>x</sup></button>
+            <button class="calculator-buttonn ">Ans</button>
+            <button class="calculator-button ">=</button>
+        </div>
+    </div>
+        
+    </body>
+</html>
